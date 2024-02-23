@@ -1,0 +1,366 @@
+/* Reset default margin and padding */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+/* Header styles */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+    color: grey;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+/* Common styles for links and text */
+.page-link1,
+.brand:hover,
+.page-link:hover,
+.dot:hover,
+.image-text button:hover,
+.view-all-link:hover,
+.red-text:hover,
+.title1:hover {
+    color: red;
+}
+
+.little-text {
+    color: red;
+    transition: color 0.3s ease;
+}
+
+/* Brand styles */
+.brand {
+    font-size: 1.7em;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Navigation links styles */
+.page-link {
+    margin: 0 10px;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+/* Right section styles */
+.right-section {
+    display: flex;
+    align-items: center;
+}
+
+/* Login styles */
+.login {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.login-text {
+    cursor: pointer;
+    color: gray;
+}
+
+/* Image styles */
+.image {
+    position: relative;
+}
+
+.image img {
+    width: 100%;
+    height: auto;
+    margin-top: 0px;
+}
+
+/* Image text styles */
+.image-text {
+    position: absolute;
+    top: 40%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+    color: #fff;
+    padding: 20px;
+}
+
+.image-text h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.image-text p {
+    font-size: 2.1em;
+    margin-bottom: 20px;
+    font-family: 'Arial', sans-serif;
+}
+
+.image-text button {
+    background-color: black;
+    border-radius: 50px;
+    font-weight: bold;
+    font-size: 1.6em;
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.button {
+    margin-top: 10px;
+}
+
+/* Dots styles */
+.dots {
+    display: none; /* Hide dots on small screens */
+}
+
+.dot {
+    width: 25px;
+    height: 25px;
+    background-color: #ccc;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    border-color: black;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.dot:hover {
+    background-color: red;
+}
+
+#dot2:hover {
+    background-color: blue;
+}
+
+#dot3:hover {
+    background-color: orangered;
+}
+
+/* Section 2 styles */
+.image2 {
+    height: auto; /* Adjust height for smaller screens */
+    position: relative;
+    margin-top: 50px;
+    padding: 0;
+    margin: 0;
+}
+
+.title {
+    font-size: 2em;
+    margin: 40px;
+    text-align: center;
+    position: relative;
+}
+
+.content {
+    display: flex;
+    flex-direction: column; /* Adjust layout for smaller screens */
+    align-items: center;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.left-content {
+    font-weight: bold;
+    margin-right: 0; /* Adjust margin for smaller screens */
+    margin-top: 20px;
+    margin-left: 0; /* Adjust margin for smaller screens */
+}
+
+.left-content p:hover {
+    color: red;
+}
+
+.left-content p {
+    font-weight: bold;
+    width: auto; /* Allow text to wrap on smaller screens */
+    font-size: 1.5em;
+    white-space: normal; /* Allow text to wrap on smaller screens */
+    color: gray;
+}
+
+.left-content p:last-child {
+    color: red;
+}
+
+.right-content {
+    width: 100%; /* Adjust width for smaller screens */
+    margin-left: 0;
+    position: relative;
+    top: 0;
+}
+
+.right-content h1 {
+    font-size: 1.7em;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.right-content p {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    text-align: center;
+    color: gray;
+}
+
+.right-content h1 span,
+.right-content p span {
+    color: red;
+}
+
+/* Section 3 styles */
+.section3 {
+    display: flex;
+    flex-direction: column; /* Adjust layout for smaller screens */
+    overflow: hidden;
+}
+
+.left-section3,
+.right-section3 {
+    flex: 1;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.left-section3 {
+    background-color: gray;
+    order: 1;
+    z-index: 1;
+}
+
+.left-section3 p {
+    font-size: 1.6em;
+}
+
+h1 {
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.section2 {
+    margin-bottom: 0;
+}
+
+.section3 {
+    margin-top: 0;
+}
+
+.retail {
+    color: red;
+    font-size: 1.7em;
+    font-weight: bold;
+}
+
+.left-section3 h1 {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.ExploreProduct {
+    color: darkgray;
+}
+
+.right-section3 {
+    background-color: #f0f0f0;
+    order: -1;
+}
+
+.right-section3 img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    z-index: 0;
+}
+
+.right-section3 p {
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    margin-top: 10px;
+    position: absolute;
+    bottom: -80px;
+}
+
+/* Section 4 styles */
+.images {
+    display: flex;
+    flex-direction: column; /* Adjust layout for smaller screens */
+    align-items: center;
+    padding: 0px;
+    text-align: center;
+}
+
+.center {
+    text-align: center;
+}
+
+.h2 {
+    text-align: center;
+}
+
+.images img {
+    width: 100%;
+    margin-bottom: 10px; /* Add some space between images on smaller screens */
+}
+
+.images h3,
+.images p {
+    margin: 0;
+}
+
+.images p {
+    font-size: 14px;
+}
+
+/* Section 5 styles */
+.section4 {
+    text-align: center;
+}
+
+.section4 .h2 {
+    color: black;
+    font-weight: bold;
+}
+
+.view-all {
+    text-align: center;
+    margin-top: 0px;
+}
+
+.view-all-link {
+    color: gray;
+}
+
+.view-all-link:hover {
+    color: red;
+}
+
+/* Footer styles */
+.social-section {
+    display: flex;
+    flex-direction: column; /* Adjust layout for smaller screens */
+    align-items: center;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom:
